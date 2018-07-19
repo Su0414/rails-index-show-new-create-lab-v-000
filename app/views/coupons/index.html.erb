@@ -4,3 +4,10 @@
   <li><%= link_to c.coupon_code, coupon_path(c) %></li>
 <% end %>
 </ul>
+
+
+<div>
+  <% @coupons.each do |c| %>
+    <div><%= link_to c.coupon_code, coupon_path(c) %></div>
+  <% end %>
+</div>
